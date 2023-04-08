@@ -2,4 +2,4 @@
 
 A component to manage student progress
 
-[Descrição](#descricao) | [Requisitos](#requisitos) | [Rodando localmente](#local)
+[Descrição](#descricao) | [Requisitos](#requisitos) | [Rodando localmente](#local) | [Colaboradores](#colaboradores)
