@@ -7,3 +7,5 @@ A component to manage student progress
 ## Descrição <a name="#descricao"></a>
 
 ## Requisitos <a name="#requisitos"></a>
+
+## Rodando localmente <a name="#local"></a>
