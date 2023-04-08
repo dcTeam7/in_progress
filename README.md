@@ -9,3 +9,5 @@ A component to manage student progress
 ## Requisitos <a name="#requisitos"></a>
 
 ## Rodando localmente <a name="#local"></a>
+
+## Colaboradores <a name="#colaboradores"></a>
