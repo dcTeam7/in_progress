@@ -13,13 +13,13 @@ npm run build
 ## Subir para o Github Pages
 
 1. Crie um repositório no Github para o projeto, se ainda não tiver criado.
-2. Em seguida, configure o Vite para que ele use caminhos relativos ao vincular arquivos de recursos em HTML. Isso é feito para que o GitHub Pages saiba onde encontrar os arquivos. Tudo o que você precisa fazer é abrir `vite.config.js` (ou `vite.config.ts` se seu projeto estiver usando TypeScript) e adicionar a seguinte linha dentro de `defineConfig`:
+2. Em seguida, configure o Vite para que ele use caminhos relativos ao vincular arquivos de recursos em HTML, conforme a [documentação](https://pt.vitejs.dev/config/shared-options.html). Isso é feito para que o GitHub Pages saiba onde encontrar os arquivos. Tudo o que você precisa fazer é abrir `vite.config.js` (ou `vite.config.ts` se seu projeto estiver usando TypeScript) e adicionar a seguinte linha dentro de `defineConfig`:
 
 ```suggestion
 base: "./"
 ```
 
-3. Finalmente, vamos configurar o GitHub Actions. Primeiro, crie um arquivo chamado `build.yml` na pasta `.github/workflows` do seu repositório e adicione o seguinte código:
+3. Finalmente, vamos configurar o GitHub Actions. Primeiro, dentro do repositório crie uma pasta `.github/workflows`, e dentro dela crie um arquivo chamado `build.yml`. Nele, adicione o seguinte código:
 
 ```suggestion
 name: Build and Deploy
