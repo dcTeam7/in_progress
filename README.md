@@ -1,4 +1,17 @@
-## Gerar o build para o projeto
+
+# in_progress
+
+A component to manage student progress.
+
+&nbsp;&nbsp;&nbsp; [Descrição](#descricao)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Requisitos](#requisitos)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Rodando local](#local)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Build](#build)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Deploy](#deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Colaboradores](#colaboradores)&nbsp;&nbsp;&nbsp;
+
+# Descrição <a name="descricao"></a>
+
+# Requisitos <a name="requisitos"></a>
+
+# Rodando local <a name="local"></a>
+
+# Build <a name="build"></a>
 
 1. Certifique-se de que todas as dependências do projeto estão instaladas e atualizadas.
 2. Abra o terminal no diretório raiz do projeto.
@@ -10,7 +23,8 @@ npm run build
 
 <br>
 
-## Subir para o Github Pages
+# Deploy <a name="deploy"></a>
+
 
 1. Crie um repositório no Github para o projeto, se ainda não tiver criado.
 2. Em seguida, configure o Vite para que ele use caminhos relativos ao vincular arquivos de recursos em HTML, conforme a [documentação](https://pt.vitejs.dev/config/shared-options.html). Isso é feito para que o GitHub Pages saiba onde encontrar os arquivos. Tudo o que você precisa fazer é abrir `vite.config.js` (ou `vite.config.ts` se seu projeto estiver usando TypeScript) e adicionar a seguinte linha dentro de `defineConfig`:
@@ -57,3 +71,5 @@ Este arquivo de fluxo de trabalho define as etapas necessárias para construir e
 6. Quando o fluxo de trabalho for concluído, verifique se seu site foi implantado. O GithubPages já está pré-configurado para servir a branch gh-pages como site.
 
 Pronto! Agora, todas as vezes que você fizer push na branch "main", o GithubActions irá construir e implantar o seu projeto Vite automaticamente.
+
+# Colaboradores <a name="#colaboradores"></a>
