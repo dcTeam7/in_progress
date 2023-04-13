@@ -73,3 +73,7 @@ Este arquivo de fluxo de trabalho define as etapas necessárias para construir e
 Pronto! Agora, todas as vezes que você fizer push na branch "main", o GithubActions irá construir e implantar o seu projeto Vite automaticamente.
 
 # Colaboradores <a name="#colaboradores"></a>
+
+Nossos agradecimentos a estas pessoas maravilhosas que contribuiram com o projeto:
+
+[![Contributors](https://contributors-img.web.app/image?repo=dcteam7/in_progress)](https://github.com/dcteam7/in_progress/graphs/contributors)
