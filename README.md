@@ -11,8 +11,21 @@ A component to manage student progress.
 
 # Rodando local <a name="local"></a>
 
-# Build <a name="build"></a>
+1. Clone o repositório: 
+  Para rodar o projeto localmente, abra o seu ambiente de trabalho local(VsCode, gitpod ou outro editor) e no terminal, no diretório onde você quer armazenar o projeto, digite:  
+  ```suggestion
+  git clone https://github.com/dcTeam7/in_progress.git
+  ``` 
+2. Após isso, para rodar o projeto seguiremos o passo a passo para rodar projetos vite. Digite essas linhas no repositório do seu projeto
+```suggestion
+npm install
+npm run dev
+```
 
+
+
+# Build <a name="build"></a>
+ ou 
 1. Certifique-se de que todas as dependências do projeto estão instaladas e atualizadas.
 2. Abra o terminal no diretório raiz do projeto.
 3. Execute o seguinte comando para gerar o build do projeto, que criará uma pasta `dist` no diretório raiz do projeto, contendo os arquivos otimizados para produção:
