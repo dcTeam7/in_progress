@@ -1,29 +1,23 @@
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
-import { SortName } from './SortName';
+import {SortButton} from './SortButton';
 
-<Meta title="MDX/Checkbox" component={SortName} />
+<Meta title="MDX/SortButton" component={SortButton} />
 
-export const Template = (args) => <SortName {...args} />;
+export const Template = (args) => <SortButton {...args} />;
 
-# Checkbox
+# Sort Button
 
-Botão que ordena os alunos por nome, podendo ser ascendente ou descendente
+Botão que possui um icone que ao clicar modifica o icone da seta para cima ou para baixo conforme State.
 
 <Canvas>
   <Story 
-    name="Crescente"
+    name="SortButton"
     args={{ 
-      label: 'Crescente',
-    }}>
-    {Template.bind({})}
-   </Story>
-
-   <Story 
-    name="Decrescente"
-    args={{ 
-      label: 'Decrescente',
+      text: 'SortButton',
+      stateBtn: false,
     }}>
     {Template.bind({})}
    </Story>
 </Canvas>
+  

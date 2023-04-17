@@ -2,14 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { SortButton } from './components/SortButton/SortButton'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <SortButton>Botão</SortButton>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

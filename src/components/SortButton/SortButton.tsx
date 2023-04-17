@@ -1,28 +1,46 @@
-import React, { ButtonHTMLAttributes, useState } from 'react';
+import { useState } from 'react';
+import './SortButton.css'
 import less from '../../assets/icons/expand_less.svg'
 import more from '../../assets/icons/expand_more.svg'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
+const style = {
+  styleSortBtn: 'SortButtonClass'
 }
 
-export function SortButton({ children, ...props }: ButtonProps) {
+interface ButtonProps {
+  /**
+   *  Texto do botão
+   */
+  text: string,
+  /**
+   * Informa o estado do botal
+   */
+  stateBtn?: boolean,
+  /**
+   * Typo do botão
+   */
+  type: 'submit' | 'button' | 'reset'
+  /**
+   * Click Handler do botão
+   */
+  onClick?: () => void;
+}
 
-  const [clicked, setClicked] = useState(true);
+export function SortButton(props: ButtonProps) {
+
+  const [clicked, setClicked] = useState(props.stateBtn);
 
   function handleClick() {
-    setClicked(false);
-    if (props.onClick) {
-      setClicked(true);
-    }
+    setClicked(!clicked)
   }
 
   return (
-    <button {...props} onClick={handleClick}>
-      {children}
+    <button 
+    className={style.styleSortBtn} 
+    onClick={handleClick}
+    type={props.type}>
+      {props.text}
       {clicked ? <img src={less}/> : <img src={more}/>}
     </button>
   );
 }
-
-
