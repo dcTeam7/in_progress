@@ -9,7 +9,7 @@ A component to manage student progress.
 
 <br>
 
-&nbsp;&nbsp;&nbsp;[Descrição](##descricao)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Requisitos](#requisitos)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Rodando local](##local)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Build](##build)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Deploy](##deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Colaboradores](##colaboradores)&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;[Descrição](#descricao)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Requisitos](#requisitos)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Rodando local](#local)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Build](#build)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Deploy](##deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Colaboradores](#colaboradores)&nbsp;&nbsp;&nbsp;
 
 <br>
 
