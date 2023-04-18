@@ -3,13 +3,55 @@
 
 A component to manage student progress.
 
-&nbsp;&nbsp;&nbsp; [Descrição](#descricao)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Requisitos](#requisitos)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Rodando local](#local)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Build](#build)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Deploy](#deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Colaboradores](#colaboradores)&nbsp;&nbsp;&nbsp;
+<br>
 
-# Descrição <a name="descricao"></a>
+---
 
-# Requisitos <a name="requisitos"></a>
+<br>
 
-# Rodando local <a name="local"></a>
+&nbsp;&nbsp;&nbsp;[Descrição](##descricao)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Requisitos](#requisitos)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Rodando local](##local)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Build](##build)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Deploy](##deploy)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Colaboradores](##colaboradores)&nbsp;&nbsp;&nbsp;
+
+<br>
+
+---
+
+## Descrição <a name="descricao"></a>
+
+<br>
+
+---
+
+## Requisitos <a name="requisitos"></a>
+
+### Para reproduzir a aplicação, existem alguns softwares que deverão estar instalados em seu computador
+
+- [![Git](https://img.shields.io/badge/Git-Repository-orange.svg)](https://git-scm.com/)
+
+O Git é amplamente utilizado como um sistema de controle de versão no mundo do desenvolvimento de software. Ele foi criado em 2005 por <a href="https://github.com/torvalds">Linus Torvalds</a>, o criador do kernel do Linux, e é um projeto de código aberto. <a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Uma-Breve-Hist%C3%B3ria-do-Git">Saiba mais...</a>
+
+<br>
+
+- [![Node.js](https://img.shields.io/badge/Node.js-Download-brightgreen)](https://nodejs.org/en/download/)
+
+Node.js é um ambiente de tempo de execução de JavaScript de plataforma cruzada, construído com o mecanismo de JavaScript V8 do Google Chrome. Ele permite que os desenvolvedores usem o <a href="https://github.com/topics/javascript">JavaScript</a> para escrever ferramentas do lado do servidor, scripts de linha de comando e aplicativos da web em tempo real. <a href="https://pt.wikipedia.org/wiki/Node.js">Saiba mais...</a>
+
+<br>
+
+- [![Visual Studio](https://img.shields.io/badge/Visual%20Studio-Download-blue.svg)](https://visualstudio.microsoft.com/downloads/)
+
+Visual Studio é um ambiente integrado de desenvolvimento (IDE) criado pela Microsoft. Ele suporta várias linguagens de programação, incluindo C#, C++, VB.NET, F#, Python e muitas outras. <a href="https://learn.microsoft.com/pt-br/visualstudio/get-started/visual-studio-ide?view=vs-2022">Saiba mais...</a>
+
+<br>
+
+Apos instalado será necessário uma extensão para o Visual Studio:
+
+- [![MDX Extension for Visual Studio Code](https://img.shields.io/visual-studio-marketplace/v/silvenon.mdx?label=MDX%20Extension&color=blue)](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
+
+<br>
+
+---
+
+## Rodando local <a name="local"></a>
 
 1. Clone o repositório: 
   Para rodar o projeto localmente, abra o seu ambiente de trabalho local(VsCode, gitpod ou outro editor) e no terminal, no diretório onde você quer armazenar o projeto, digite:  
@@ -23,9 +65,12 @@ npm run dev
 ```
 
 
+<br>
 
-# Build <a name="build"></a>
- ou 
+---
+
+## Build <a name="build"></a>
+
 1. Certifique-se de que todas as dependências do projeto estão instaladas e atualizadas.
 2. Abra o terminal no diretório raiz do projeto.
 3. Execute o seguinte comando para gerar o build do projeto, que criará uma pasta `dist` no diretório raiz do projeto, contendo os arquivos otimizados para produção:
@@ -36,7 +81,7 @@ npm run build
 
 <br>
 
-# Deploy <a name="deploy"></a>
+## Deploy <a name="deploy"></a>
 
 
 1. Crie um repositório no Github para o projeto, se ainda não tiver criado.
@@ -85,7 +130,11 @@ Este arquivo de fluxo de trabalho define as etapas necessárias para construir e
 
 Pronto! Agora, todas as vezes que você fizer push na branch "main", o GithubActions irá construir e implantar o seu projeto Vite automaticamente.
 
-# Colaboradores <a name="colaboradores"></a>
+<br>
+
+---
+
+## Colaboradores <a name="colaboradores"></a>
 
 Nossos agradecimentos a estas pessoas maravilhosas que contribuiram com o projeto:
 
