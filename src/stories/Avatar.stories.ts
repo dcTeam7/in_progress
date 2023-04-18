@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default ={
     args: {
-        src: "https://via.placeholder.com/150",
+        src: "https://via.placeholder.com/50",
         alt: "Avatar"
     },
 }
