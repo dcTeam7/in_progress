@@ -53,6 +53,18 @@ Apos instalado será necessário uma extensão para o Visual Studio:
 
 ## Rodando local <a name="local"></a>
 
+1. Clone o repositório: 
+  Para rodar o projeto localmente, abra o seu ambiente de trabalho local(VsCode, gitpod ou outro editor) e no terminal, no diretório onde você quer armazenar o projeto, digite:  
+  ```suggestion
+  git clone https://github.com/dcTeam7/in_progress.git
+  ``` 
+2. Após isso, para rodar o projeto seguiremos o passo a passo para rodar projetos vite. Digite essas linhas no repositório do seu projeto
+```suggestion
+npm install
+npm run dev
+```
+
+
 <br>
 
 ---
