@@ -23,7 +23,7 @@ interface ButtonProps {
   /**
    * Click Handler do botão
    */
-  onClick?: () => void;
+  onClick?: (b : boolean) => void;
 }
 
 export function SortButton(props: ButtonProps) {
@@ -32,6 +32,9 @@ export function SortButton(props: ButtonProps) {
 
   function handleClick() {
     setClicked(!clicked)
+    if(props.onClick) {
+      props.onClick(!clicked)
+    }
   }
 
   return (

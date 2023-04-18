@@ -1,10 +1,11 @@
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
-
+import { action } from '@storybook/addon-actions';
 import {SortButton} from './SortButton';
 
 <Meta title="MDX/SortButton" component={SortButton} />
 
-export const Template = (args) => <SortButton {...args} />;
+export const Template = (args) => 
+<SortButton {...args}/>;
 
 # Sort Button
 
@@ -16,6 +17,7 @@ Botão que possui um icone que ao clicar modifica o icone da seta para cima ou p
     args={{ 
       text: 'SortButton',
       stateBtn: false,
+      onClick: action('clicked-button'),
     }}>
     {Template.bind({})}
    </Story>
