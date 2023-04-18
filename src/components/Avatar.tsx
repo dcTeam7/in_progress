@@ -5,8 +5,8 @@ interface AvatarProps {
   alt: string;
 }
 
-const Avatar = ({ src, alt }: AvatarProps) => {
-  return <img src={src} alt={alt} style={{borderRadius: "50%"}}/>;
+const Avatar = (props: AvatarProps) => {
+  return <img src={props.src} alt={props.alt} style={{borderRadius: "50%"}}/>;
 };
 
 export default Avatar;
