@@ -13,7 +13,7 @@ interface ButtonProps {
    */
   text: string,
   /**
-   * Informa o estado do botal
+   * Informa o estado do botão
    */
   stateBtn?: boolean,
   /**
