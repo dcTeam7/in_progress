@@ -1,0 +1,32 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Avatar from "./Avatar";
+
+<Meta title="MDX/Avatar" component={Avatar} />
+
+export const Template = (args) => <Avatar {...args} />;
+
+# Avatar
+
+Imagem que renderiza um avatar.
+
+<Canvas>
+  <Story
+    name="Avatar"
+    args={{
+      src: "https://avatars.githubusercontent.com/u/98550669?v=4",
+      alt: "Nome do aluno",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+
+  <Story
+    name="Avatar2"
+    args={{
+      src: "https://avatars.githubusercontent.com/u/55944691?v=4",
+      alt: "Nome de outro aluno",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
