@@ -1,7 +1,34 @@
-import React from 'react'
+import React from 'react';
+import exportIcon from './exportIcon.svg';
+import './ExportData.css'
 
-export function ExportData() {
+const style = {
+  styleExportData: 'ExportDataClass'
+}
+
+interface ExportDataProps {
+  /**
+   *  Texto do botão
+   */
+  text: string,
+  /**
+   * Html for do label
+   */
+  htmlFor: string,
+
+  onClick?: () => void;
+}
+
+export function ExportData(props: ExportDataProps) {
+
+  function ExportCSV() { }
+
   return (
-    <div>ExportData</div>
+    <>
+      <button onClick={ExportCSV} className={style.styleExportData}>
+        <img src={exportIcon} alt="Export CSV" />
+        <label htmlFor={props.htmlFor}>{props.text}</label>
+      </button>
+    </>
   )
 }

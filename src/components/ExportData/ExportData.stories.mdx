@@ -8,3 +8,39 @@ export const Template = (args) =>
 <ExportData {...args}/>;
 
 # Export Data
+
+Componente que ao ser clicado permite o usuário **exportar** os dados coletados em um arquivo ```CSV```
+
+Ao clicar no botão, será realizado um download de um arquivo onde ira contér os dados de cada aluno
+
+<Canvas>
+  <Story 
+    name="ExportData"
+    args={{ 
+      text: 'Exportar',
+      onClick: action('clicked-button'),
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+## Propriedades para inicializar o componente
+
+- Você precisa definir seu texto atravéz da propriedade ```text``` essa propriedade é **obrigatória**
+
+```.tsx
+<ExportData text="Meu texto"/>
+```
+
+O texto será renderizado na tela ao lado de seu ícone
+
+---
+
+- Definir o onClick para utilizar **Javascript** atravéz do seu click.
+
+```.tsx
+<ExportData text="Exportar Dados"/>
+```
+Método ```onClick()``` por default não é **obrigatório** no momento de implementação é possível você ja chamar o componente para que so depois se preocupe de fato em como **implementar a funcionalidade**.
+
+---
