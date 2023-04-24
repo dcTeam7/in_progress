@@ -12,4 +12,5 @@
 
 .ExportDataClass label {
     font-family: monospace;
+    cursor: pointer;
 }

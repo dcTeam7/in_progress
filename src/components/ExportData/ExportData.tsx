@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import exportIcon from './exportIcon.svg';
 import './ExportData.css'
 
@@ -12,16 +12,27 @@ interface ExportDataProps {
    */
   text: string,
   /**
+   * Informa o estado do botão
+   */
+  stateBtn?: boolean,
+  /**
    * Html for do label
    */
   htmlFor: string,
 
-  onClick?: () => void;
+  onClick?: (b : boolean) => void;
 }
 
 export function ExportData(props: ExportDataProps) {
 
-  function ExportCSV() { }
+  const [clicked, setClicked] = useState(props.stateBtn);
+
+  function ExportCSV() {
+    setClicked(!clicked)
+    if(props.onClick) {
+      props.onClick(!clicked)
+    }
+  }
 
   return (
     <>
