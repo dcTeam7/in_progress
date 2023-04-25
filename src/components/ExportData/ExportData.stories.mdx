@@ -2,7 +2,7 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { action } from '@storybook/addon-actions';
 import { ExportData } from './ExportData';
 
-<Meta title="MDX/ExportData" component={ExportData} />
+<Meta title="MDX/ExportData" component={ExportData} tags={['autodocs']} parameters={{layout: 'fullscreen'}}/>
 
 export const Template = (args) => 
 <ExportData {...args}/>;
@@ -14,8 +14,16 @@ Componente que ao ser clicado permite o usuário **exportar** os dados coletados
 Ao clicar no botão, será realizado um download de um arquivo onde ira contér os dados de cada aluno.
 
 <Canvas>
-  <Story 
-    name="ExportData"
+    <Story 
+    name="ExportData sem texto"
+    args={{ 
+      onClick: action('clicked-button'),
+    }}>
+    {Template.bind({})}
+   </Story>
+
+    <Story 
+    name="ExportData com texto"
     args={{ 
       text: 'Exportar',
       htmlFor: 'Export Data',
@@ -24,6 +32,7 @@ Ao clicar no botão, será realizado um download de um arquivo onde ira contér 
     {Template.bind({})}
    </Story>
 </Canvas>
+
 
 ## Propriedades para inicializar o componente
 

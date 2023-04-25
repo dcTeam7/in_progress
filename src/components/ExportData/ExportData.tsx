@@ -19,10 +19,18 @@ interface ExportDataProps {
    * Html for do label
    */
   htmlFor: string,
-
+  /**
+   * Função onclick que aciona um callback
+   * @param b 
+   * @returns void
+   */
   onClick?: (b : boolean) => void;
 }
-
+/**
+ * Componente primário da interface do usuário para interação do usuário
+ * @param props 
+ * @returns button com propriedades dinâmicas.
+ */
 export function ExportData(props: ExportDataProps) {
 
   const [clicked, setClicked] = useState(props.stateBtn);
