@@ -1,0 +1,16 @@
+.ExportDataClass {
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ExportDataClass img {
+    width: 20px;
+}
+
+.ExportDataClass label {
+    font-family: monospace;
+    cursor: pointer;
+}

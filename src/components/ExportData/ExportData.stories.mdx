@@ -1,0 +1,73 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs';
+import { action } from '@storybook/addon-actions';
+import { ExportData } from './ExportData';
+
+<Meta t
+itle="MDX/ExportData" 
+component={ExportData} 
+tags={['autodocs']} 
+parameters={{layout: 'fullscreen'}}/>
+
+export const Template = (args) => 
+<ExportData {...args}/>;
+
+# Export Data
+
+Componente que ao ser clicado permite o usuário **exportar** os dados coletados em um arquivo ```CSV```
+
+Ao clicar no botão, será realizado um download de um arquivo onde ira contér os dados de cada aluno.
+
+<Canvas>
+    <Story 
+    name="ExportData sem texto"
+    args={{ 
+      onClick: action('clicked-button'),
+    }}>
+    {Template.bind({})}
+   </Story>
+
+    <Story 
+    name="ExportData com texto"
+    args={{ 
+      text: 'Exportar',
+      htmlFor: 'Export Data',
+      onClick: action('clicked-button'),
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+<ArgsTable of={ExportData} />
+
+## Propriedades para inicializar o componente
+
+- Você precisa definir seu texto atravéz da propriedade ```text``` essa propriedade é **obrigatória**
+
+```.tsx
+<ExportData text="Meu texto"/>
+```
+
+O texto será renderizado na tela ao lado de seu ícone
+
+---
+
+- Definir o onClick para utilizar **Javascript** atravéz do seu click.
+
+```.tsx
+<ExportData text="Exportar Dados"/>
+```
+Método ```onClick()``` por default não é **obrigatório** no momento de implementação é possível você ja chamar o componente para que so depois se preocupe de fato em como **implementar a funcionalidade**.
+
+---
+
+## Aplicando o método onClick()
+
+Realizando a implementação do ```onClick()``` é possivel passar as funcionalidades como um ```alert()``` ou qualquer código em Javascript.
+
+<ExportData text="Meu texto" htmlFor="Botão" onClick={() => alert('funcionou')}/>
+
+```.tsx
+<ExportData text="Meu texto" htmlFor="Botão" onClick={() => {
+  alert('Funcionou')
+}}/>
+```
