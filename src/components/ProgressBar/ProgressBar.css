@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid #E5E5E5;
+    padding: 10px 5px;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.label {
+    color: #BDBDBD;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    grid-area: 10px;
+    position: relative;
+    color: 1px solid #ccc;
+}
+
+.progress-bar-fill {
+    height: 10px;
+    background-color: #F9C600;
+    position: relative;
+    border-radius: 8px;
+}
+
+.units {
+    color: #BDBDBD;
+    right: 0;
+}
