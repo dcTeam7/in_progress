@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { action } from "@storybook/addon-actions";
+import { ProgressBar } from "./ProgressBar";
+
+<Meta
+  t
+  itle="MDX/ProgressBar"
+  component={ProgressBar}
+  tags={["autodocs"]}
+  parameters={{ layout: "fullscreen" }}
+/>
+
+export const Template = (args) => <ProgressBar {...args} />;
+
+# Progress Bar
+
+Componente capaz de mostrar uma barra de progresso na tela
+
+<Canvas>
+    <Story 
+    name="Exemplo 01"
+    args={{ 
+        text: "Atividades de lógica",
+        value: 100,
+    }}>
+    {Template.bind({})}
+   </Story>
+
+   <Story 
+    name="Exemplo 02"
+    args={{ 
+        text: "Atividades de inglês",
+        value: 50,
+    }}>
+    {Template.bind({})}
+   </Story>
+
+</Canvas>
+
+<ArgsTable of={ProgressBar} />
