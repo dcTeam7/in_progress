@@ -2,14 +2,26 @@
     border: 1px solid #E5E5E5;
     padding: 10px 5px;
     border-radius: 8px;
-    height: 40px;
+    height: 45px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-label {
+    display: flex;
+    align-items: center;
 }
 
 .label {
     color: #BDBDBD;
+    margin-right: 20px;
 }
 
 .progress-bar {
+    position: absolute;
     display: flex;
     align-items: center;
     grid-area: 10px;
@@ -27,4 +39,5 @@
 .units {
     color: #BDBDBD;
     right: 0;
+    position: absolute;
 }
